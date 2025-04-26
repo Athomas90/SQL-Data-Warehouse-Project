@@ -1,12 +1,15 @@
-SQL-Data-Warehouse-Project
+**SQL-Data-Warehouse-Project**
+
 This project was designed to build a modern data warehouse using SQL Server to consolidate sales data from multiple source systems, enabling comprehensive analytical reporting and data-driven decision-making for the organization.
-This project involves:
-Data Sources & Integration
 
-Import and consolidate data from two primary source systems:
+**This project involves**:
 
-Enterprise Resource Planning (ERP) system
-Customer Relationship Management (CRM) system
+**Data Sources & Integration**
+
+-- Import and consolidate data from two primary source systems:
+
+    -- Enterprise Resource Planning (ERP) system
+    -- Customer Relationship Management (CRM) system
 
 
 Source data will be provided as CSV files
