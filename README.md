@@ -5,7 +5,9 @@ This project was designed to modern data warehouse using SQL Server to consolida
 ##  This project involves:
 
 ## Data Sources & Integration
-- **Import and consolidate data from two primary source systems**: Enterprise Resource Planning (ERP) system & Customer Relationship Management (CRM) system
+- **Import and consolidate data from two primary source systems**:
+- Enterprise Resource Planning (ERP) system
+- Customer Relationship Management (CRM) system
     *	Source data will be provided as CSV files
     *	Integrate both data sources into a unified, analytics-optimized data model
 - **Data Quality Management**
