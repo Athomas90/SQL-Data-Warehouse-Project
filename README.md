@@ -5,11 +5,11 @@ This project was designed to modern data warehouse using SQL Server to consolida
 ##  This project involves:
 
 **Data Sources & Integration**
- *Import and consolidate data from two primary source systems:
-   - Enterprise Resource Planning (ERP) system
-   - Customer Relationship Management (CRM) system
-       *	Source data will be provided as CSV files
-       *	Integrate both data sources into a unified, analytics-optimized data model
+    * Import and consolidate data from two primary source systems:
+         * Enterprise Resource Planning (ERP) system
+         * Customer Relationship Management (CRM) system
+    * Source data will be provided as CSV files
+    * Integrate both data sources into a unified, analytics-optimized data model
     
   **Data Quality Management**
     *	Implement data cleansing procedures to address quality issues
@@ -28,10 +28,14 @@ This project was designed to modern data warehouse using SQL Server to consolida
        * Data dictionary with field definitions
        *	Source-to-target mapping documentation
        * Business rules and transformations applied
-   
+
+---
+
 **Project Overview**
 This data warehouse project aims to solve the organization's challenge of fragmented sales data by creating a consolidated analytical platform. Currently, sales data resides in separate ERP and CRM systems, making comprehensive analysis difficult and time-consuming.
 The data engineering team will build a SQL Server-based data warehouse that serves as the single source of truth for sales analytics. The solution will involve extracting data from the source systems (provided as CSV files), transforming it to address quality issues, and loading it into a dimensional model designed specifically for analytical queries.
+
+---
 
  **Key project deliverables include**:
 1.	**Data Architecture**: Designing a Modern Data Warehouse Using Medallion Architecture Bronze, Silver, and Gold layers.
