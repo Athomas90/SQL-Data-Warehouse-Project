@@ -1,48 +1,119 @@
-# SQL-Data-Warehouse-Project
+SQL-Data-Warehouse-Project
+This project was designed to build a modern data warehouse using SQL Server to consolidate sales data from multiple source systems, enabling comprehensive analytical reporting and data-driven decision-making for the organization.
+This project involves:
+Data Sources & Integration
 
-This project was designed to modern data warehouse using SQL Server to consolidate sales data from multiple source systems, enabling comprehensive analytical reporting and data-driven decision-making for the organization.
+Import and consolidate data from two primary source systems:
 
-##  This project involves:
+Enterprise Resource Planning (ERP) system
+Customer Relationship Management (CRM) system
 
-**Data Sources & Integration**
-    - * Import and consolidate data from two primary source systems:
-         - Enterprise Resource Planning (ERP) system
-         - Customer Relationship Management (CRM) system
-    - * Source data will be provided as CSV files
-    * Integrate both data sources into a unified, analytics-optimized data model
-    
-  **Data Quality Management**
-    - * Implement data cleansing procedures to address quality issues
-    - * Establish validation rules to ensure data integrity
-    - * Resolve inconsistencies, duplicates, and missing values prior to analysis
- 
- **Data Model Design**
-    - * Create a user-friendly data model optimized for analytical queries
-    - * Design appropriate dimensional and fact tables based on business requirements
-    - * Focus on current dataset implementation (no historical data requirements)
-    - * Ensure the model supports efficient reporting and analysis
 
- **Documentation Requirements**
-    - * Develop comprehensive data model documentation including: 
-       - * Entity relationship diagrams
-       - * Data dictionary with field definitions
-       - * Source-to-target mapping documentation
-       - * Business rules and transformations applied
+Source data will be provided as CSV files
+Integrate both data sources into a unified, analytics-optimized data model
 
----
+Data Quality Management
 
-**Project Overview**
+Implement data cleansing procedures to address quality issues
+Establish validation rules to ensure data integrity
+Resolve inconsistencies, duplicates, and missing values prior to analysis
 
+Data Model Design
+
+Create a user-friendly data model optimized for analytical queries
+Design appropriate dimensional and fact tables based on business requirements
+Focus on current dataset implementation (no historical data requirements)
+Ensure the model supports efficient reporting and analysis
+
+Documentation Requirements
+
+Develop comprehensive data model documentation including:
+
+Entity relationship diagrams
+Data dictionary with field definitions
+Source-to-target mapping documentation
+Business rules and transformations applied
+
+
+
+
+Project Overview
 This data warehouse project aims to solve the organization's challenge of fragmented sales data by creating a consolidated analytical platform. Currently, sales data resides in separate ERP and CRM systems, making comprehensive analysis difficult and time-consuming.
 The data engineering team will build a SQL Server-based data warehouse that serves as the single source of truth for sales analytics. The solution will involve extracting data from the source systems (provided as CSV files), transforming it to address quality issues, and loading it into a dimensional model designed specifically for analytical queries.
 
----
+Key project deliverables include:
 
- **Key project deliverables include**:
-1.	**Data Architecture**: Designing a Modern Data Warehouse Using Medallion Architecture Bronze, Silver, and Gold layers.
-2.	**ETL Pipelines**: Extracting, transforming, and loading data from source systems into the warehouse.
-3.	**Data Modeling**: Developing fact and dimension tables optimized for analytical queries.
-4.	**Analytics & Reporting**: Creating SQL-based reports and dashboards for actionable insights.
+Data Architecture: Designing a Modern Data Warehouse Using Medallion Architecture Bronze, Silver, and Gold layers.
+ETL Pipelines: Extracting, transforming, and loading data from source systems into the warehouse.
+Data Modeling: Developing fact and dimension tables optimized for analytical queries.
+Analytics & Reporting: Creating SQL-based reports and dashboards for actionable insights.
+
+Architecture
+┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
+│                 │     │                 │     │                 │
+│  Source Systems │────▶│     Extract     │────▶│  Bronze Layer   │
+│  (ERP & CRM)    │     │  (CSV Imports)  │     │  (Raw Data)     │
+│                 │     │                 │     │                 │
+└─────────────────┘     └─────────────────┘     └────────┬────────┘
+                                                         │
+                                                         ▼
+┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
+│                 │     │                 │     │                 │
+│   Gold Layer    │◀────│     Silver      │◀────│   Transform     │
+│ (Presentation)  │     │  (Standardized) │     │ (Data Cleansing)│
+│                 │     │                 │     │                 │
+└─────────────────┘     └─────────────────┘     └─────────────────┘
+        │
+        ▼
+┌─────────────────┐
+│                 │
+│  Analytical     │
+│  Reporting      │
+│                 │
+└─────────────────┘
+Project Status
+
+ Requirements gathering
+ Data source analysis
+ Data model design
+ ETL development
+ Data quality implementation
+ Documentation
+ Testing
+ Deployment
+
+Getting Started
+Prerequisites
+
+SQL Server 2019 or later
+SQL Server Management Studio (SSMS)
+SQL Server Integration Services (SSIS)
+Visual Studio with SSDT (SQL Server Data Tools)
+
+Installation
+
+Clone this repository
+Create the required SQL Server databases
+Run the schema creation scripts in the sql/schema directory
+Configure the ETL process using the SSIS packages in the etl directory
+Execute the initial data load
+
+Directory Structure
+/
+├── data/                  # Sample data files
+├── docs/                  # Documentation
+│   ├── data-dictionary/   # Field definitions
+│   └── erd/              # Entity relationship diagrams
+├── etl/                   # ETL pipelines and SSIS packages
+├── sql/                   # SQL scripts
+│   ├── schema/            # Table creation scripts
+│   ├── stored-procs/      # Stored procedures
+│   └── views/             # SQL views for reporting
+└── tests/                 # Test scripts and data validation
+Contributing
+Please read CONTRIBUTING.md for details on our code of conduct and the process for submitting pull requests.
+License
+This project is licensed under the MIT License - see the LICENSE.md file for details
 
 
 
