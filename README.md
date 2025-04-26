@@ -5,28 +5,28 @@ This project was designed to modern data warehouse using SQL Server to consolida
 ##  This project involves:
 
 **Data Sources & Integration**
-    - Import and consolidate data from two primary source systems:
+    * Import and consolidate data from two primary source systems:
          - Enterprise Resource Planning (ERP) system
          - Customer Relationship Management (CRM) system
-    - Source data will be provided as CSV files
-    - Integrate both data sources into a unified, analytics-optimized data model
+    * Source data will be provided as CSV files
+    * Integrate both data sources into a unified, analytics-optimized data model
     
   **Data Quality Management**
-    -	Implement data cleansing procedures to address quality issues
-    -	Establish validation rules to ensure data integrity
-    -	Resolve inconsistencies, duplicates, and missing values prior to analysis
+    * Implement data cleansing procedures to address quality issues
+    * Establish validation rules to ensure data integrity
+    * Resolve inconsistencies, duplicates, and missing values prior to analysis
  
  **Data Model Design**
-   -	Create a user-friendly data model optimized for analytical queries
-   -  Design appropriate dimensional and fact tables based on business requirements
-   -	Focus on current dataset implementation (no historical data requirements)
-   -	Ensure the model supports efficient reporting and analysis
+    * Create a user-friendly data model optimized for analytical queries
+    * Design appropriate dimensional and fact tables based on business requirements
+    * Focus on current dataset implementation (no historical data requirements)
+    * Ensure the model supports efficient reporting and analysis
 
  **Documentation Requirements**
-   -	Develop comprehensive data model documentation including: 
-       -	Entity relationship diagrams
+    * Develop comprehensive data model documentation including: 
+       - Entity relationship diagrams
        - Data dictionary with field definitions
-       -	Source-to-target mapping documentation
+       - Source-to-target mapping documentation
        - Business rules and transformations applied
 
 ---
