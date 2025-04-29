@@ -1,6 +1,6 @@
 # SQL-Data-Warehouse-Project
 
-This project was designed to build a modern data warehouse using SQL Server to consolidate sales data from multiple source systems, enabling comprehensive analytical reporting and data-driven decision-making for the organization.
+This project was designed to build a modern data warehouse using MySQL to consolidate sales data from multiple source systems, enabling comprehensive analytical reporting and data-driven decision-making for the organization.
 
 **This project involves**:
 
@@ -38,7 +38,7 @@ This project was designed to build a modern data warehouse using SQL Server to c
 **Project Overview**
 
 This data warehouse project aims to solve the organization's challenge of fragmented sales data by creating a consolidated analytical platform. Currently, sales data resides in separate ERP and CRM systems, making comprehensive analysis difficult and time-consuming.
-The data engineering team will build a SQL Server-based data warehouse that serves as the single source of truth for sales analytics. The solution will involve extracting data from the source systems (provided as CSV files), transforming it to address quality issues, and loading it into a dimensional model designed specifically for analytical queries.
+The data engineering team will build a MySQL-based data warehouse that serves as the single source of truth for sales analytics. The solution will involve extracting data from the source systems (provided as CSV files), transforming it to address quality issues, and loading it into a dimensional model designed specifically for analytical queries.
 
 
 ----
